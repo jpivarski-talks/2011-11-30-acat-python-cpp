@@ -172,6 +172,46 @@ equivalent Python: \textcolor{darkblue}{140~seconds}
 \end{uncoverenv}
 \end{frame}
 
+\begin{frame}{\mbox{ }}
+\LARGE
+\begin{center}
+\textcolor{darkblue}{Lessons learned in Python-C++ integration}
+\end{center}
+\end{frame}
+
+\begin{frame}{Issue \#1: C++ as an ABI}
+\large
+
+\vspace{0.5 cm}
+Awkward 1.x design goal: connect to C++ HEP libraries through the C++ layer.
+
+\vspace{0.25 cm}
+Awkward 2.x removes this capability.
+
+\vspace{0.25 cm}
+\begin{itemize}\setlength{\itemsep}{0.25 cm}
+\item<2-> Python packages must be distributed as binaries, with compilation-on-install as a last resort: ``\mintinline{bash}{pip install awkward}'' shouldn't have dependencies outside of \mintinline{bash}{pip}, such as the existence of a compiler.
+
+\item<3-> Dynamically linking to precompiled C++ exposes a project to ABI dependencies. Awkward-enabled HEP libraries would depend on ABI version.
+
+{\scriptsize (See \mintinline{bash}{PYBIND11_INTERNALS_VERSION} in \mintinline{bash}{pybind11/include/pybind11/detail/internals.h}.)}
+
+\item<4-> Not needed anyway: \textcolor{blue}{\href{https://github.com/scikit-hep/fastjet}{fastjet}}, a Python/Awkward interface to \textcolor{blue}{\href{http://fastjet.fr/}{FastJet}} (C++), interfaces through C data types rather easily.
+
+\vspace{0.25 cm}
+Awkward Array does not need to be C++ to
+
+interface with C++.
+\end{itemize}
+
+\vspace{-1.65 cm}
+\hfill \uncover<4->{\includegraphics[width=0.3\linewidth]{fastjet-logo.pdf}}
+
+\vspace{-0.15 cm}
+\hfill \uncover<4->{{\small See Aryan Roy's poster!} \hspace{0.2 cm}}
+
+\end{frame}
+
 
 \end{document}
 
