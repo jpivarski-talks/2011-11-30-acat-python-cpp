@@ -220,6 +220,34 @@ interface with C++.
 \end{columns}
 \end{frame}
 
+\begin{frame}{Issue \#2: Reference cycles through C++}
+\large
+\vspace{0.25 cm}
+\begin{itemize}\setlength{\itemsep}{0.15 cm}
+\item<1-> In most circumstances, Awkward Arrays have no reference cycles because they're immutable.
+
+\item<2-> VirtualArrays (for lazy evaluation) maintain a cache to avoid repeat evaluations. Sometimes, a VirtualArray is put inside its own cache.
+
+\item<3-> Python garbage collector can detect reference cycles, immediately when a reference count goes to zero or during mark-and-sweep.
+
+\item<4-> But it can't detect a reference cycle through C++.
+
+\item<5-> We tried to fix this by making the VirtualArray cache a weakref, but this had its own share of issues: {\normalsize \#230, \#400, \#432, \#479, \#541, \#560, \#597, \#603, \#655, \#679, \#783, \#865, \#899, \#940, \#1052\ldots}
+
+\item<6-> Even sneakier: reference cycles can come through closures in the VirtualArray's function. (Anything mutable is an opening!)
+
+\item<7-> Dropping C++ solves this, but we're also replacing VirtualArrays with Dask.
+\end{itemize}
+\end{frame}
+
+\begin{frame}{Issue \#3: Releasing the GIL}
+
+\hfill \includegraphics[width=0.25\linewidth]{python-gil-eat-concurrency.jpg}
+
+\hfill \includegraphics[width=0.5\linewidth]{awkwardforth-gil-plots.png}
+
+\end{frame}
+
 
 \end{document}
 
