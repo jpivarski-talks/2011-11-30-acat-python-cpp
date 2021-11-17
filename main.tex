@@ -79,7 +79,7 @@ Efficient representation of variable length, nested, JSON-like data with NumPy-l
 
 \begin{columns}
 \column{1.15\linewidth}
-\includegraphics[width=\linewidth]{pivarski-one-slide-summary.pdf}
+\only<1>{\includegraphics[width=\linewidth]{pivarski-one-slide-summary-0.pdf}}\only<2>{\includegraphics[width=\linewidth]{pivarski-one-slide-summary-1.pdf}}\only<3>{\includegraphics[width=\linewidth]{pivarski-one-slide-summary-2.pdf}}\only<4>{\includegraphics[width=\linewidth]{pivarski-one-slide-summary-3.pdf}}
 \end{columns}
 \end{frame}
 
@@ -90,12 +90,14 @@ Efficient representation of variable length, nested, JSON-like data with NumPy-l
 \includegraphics[width=\linewidth]{awkward-timeline.pdf}
 \end{columns}
 
+\begin{uncoverenv}<2->
 \begin{itemize}
 \item Prehistory: Femtocode {\small (\textcolor{darkgreen}{21 kLOC Python})} and OAMap {\small (\textcolor{darkgreen}{8 kLOC Python})}
 \item Awkward 0.x: first users, first API, pure Python + NumPy {\small (\textcolor{darkgreen}{9 kLOC Python})}
 \item Awkward 1.x: rewrite for stability \& API \mbox{\small (\textcolor{darkgreen}{22 kLOC Python}, \textcolor{blue}{70 kLOC C++}, \textcolor{violet}{14 kLOC C})\hspace{-0.5 cm}}
 \item Awkward 2.x: refactor for maintainability \mbox{\small (\textcolor{darkgreen}{29 kLOC Python}, \textcolor{blue}{10 kLOC C++}, \textcolor{violet}{9 kLOC C})\hspace{-0.5 cm}}
 \end{itemize}
+\end{uncoverenv}
 \end{frame}
 
 \begin{frame}{Language changes}
@@ -108,11 +110,11 @@ Efficient representation of variable length, nested, JSON-like data with NumPy-l
 Had to replace some NumPy function calls with precompiled C functions, so we also built the infrastructure in C++ with Python only for the high-level front-end.
 
 \vspace{1 cm}
-
+\begin{uncoverenv}<2->
 \textcolor{darkblue}{Awkward 1.x $\to$ 2.x:} porting the C++ infrastructure to Python.
 
 \vspace{0.25 cm}
-For reasons described in this talk.
+For reasons described later in this talk.
 
 \vspace{0.25 cm}
 \begin{center}
@@ -127,6 +129,47 @@ For reasons described in this talk.
 
 \textcolor{gray}{\scriptsize Awkward 2.x is 75\% done; the above is a projection}
 \end{center}
+\end{uncoverenv}
+\end{frame}
+
+\begin{frame}{Evolution of architecture: Awkward \only<1>{0.x}\only<2>{1.x}\only<3>{2.x}}
+\vspace{0.25 cm}
+\begin{columns}
+\column{1.15\linewidth}
+\mbox{\hspace{1 cm}\only<1>{\includegraphics[width=\linewidth]{awkward-0-layers.pdf}}\only<2>{\includegraphics[width=\linewidth]{awkward-1-layers.pdf}}\only<3>{\includegraphics[width=\linewidth]{awkward-2-layers.pdf}}}
+\end{columns}
+\end{frame}
+
+\begin{frame}{Language choice is unrelated to performance}
+\large
+
+\vspace{0.25 cm}
+All $\mathcal{O}(n)$ operations for arrays of length $n$ are performed in the kernels layer (C).
+
+\vspace{0.15 cm}
+Porting the tree structures from C++ to Python has no $\mathcal{O}(n)$ impact.
+
+\vspace{0.15 cm}
+\begin{uncoverenv}<2->
+\mbox{ } \hfill \textcolor{darkblue}{For an array of length 30~million:} \hfill \mbox{ }
+
+\includegraphics[width=\linewidth]{numpy-like-vs-equivalent-python.pdf}
+
+\vspace{0.25 cm}
+\begin{columns}
+\column{0.37\linewidth}
+Awkward 0.15.5: \hfill\textcolor{darkblue}{4.6~seconds}
+
+Awkward 1.5.1: \hfill\textcolor{darkblue}{2.4~seconds}
+
+Awkward 2.0.0a: \hfill\textcolor{darkblue}{1.5~seconds}
+
+\column{0.4\linewidth}
+equivalent Python: \textcolor{darkblue}{140~seconds}
+
+\textcolor{gray}{because $\mathcal{O}(n)$ operations are performed in Python}
+\end{columns}
+\end{uncoverenv}
 \end{frame}
 
 
