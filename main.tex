@@ -56,10 +56,79 @@
 
 % START START START START START START START START START START START START START
 
-\begin{frame}{First slide}
+\begin{frame}{\mbox{ }}
+\Large
+
 \vspace{0.5 cm}
-HERE
+This talk is about lessons learned in Python-C++ integration.
+
+\vspace{1.5 cm}
+Awkward Array is the case study.
+
+\vspace{0.25 cm}
+\begin{center}
+\includegraphics[width=0.35\linewidth]{awkward-logo.pdf}
+\end{center}
 \end{frame}
+
+\begin{frame}{Awkward Array}
+\large
+\vspace{0.25 cm}
+
+Efficient representation of variable length, nested, JSON-like data with NumPy-like functions to compute and restructure at scale in Python.
+
+\begin{columns}
+\column{1.15\linewidth}
+\includegraphics[width=\linewidth]{pivarski-one-slide-summary.pdf}
+\end{columns}
+\end{frame}
+
+\begin{frame}{History of the project}
+
+\begin{columns}
+\column{1.15\linewidth}
+\includegraphics[width=\linewidth]{awkward-timeline.pdf}
+\end{columns}
+
+\begin{itemize}
+\item Prehistory: Femtocode {\small (\textcolor{darkgreen}{21 kLOC Python})} and OAMap {\small (\textcolor{darkgreen}{8 kLOC Python})}
+\item Awkward 0.x: first users, first API, pure Python + NumPy {\small (\textcolor{darkgreen}{9 kLOC Python})}
+\item Awkward 1.x: rewrite for stability \& API \mbox{\small (\textcolor{darkgreen}{22 kLOC Python}, \textcolor{blue}{70 kLOC C++}, \textcolor{violet}{14 kLOC C})\hspace{-0.5 cm}}
+\item Awkward 2.x: refactor for maintainability \mbox{\small (\textcolor{darkgreen}{29 kLOC Python}, \textcolor{blue}{10 kLOC C++}, \textcolor{violet}{9 kLOC C})\hspace{-0.5 cm}}
+\end{itemize}
+\end{frame}
+
+\begin{frame}{Language changes}
+\large
+\vspace{0.5 cm}
+
+\textcolor{darkblue}{Awkward 0.x $\to$ 1.x:} complete rewrite with the intention of changing the API.
+
+\vspace{0.25 cm}
+Had to replace some NumPy function calls with precompiled C functions, so we also built the infrastructure in C++ with Python only for the high-level front-end.
+
+\vspace{1 cm}
+
+\textcolor{darkblue}{Awkward 1.x $\to$ 2.x:} porting the C++ infrastructure to Python.
+
+\vspace{0.25 cm}
+For reasons described in this talk.
+
+\vspace{0.25 cm}
+\begin{center}
+\begin{tabular}{c r r}
+\textcolor{darkgreen}{Python} & \textcolor{darkgreen}{$-19.6$~kLOC} & \textcolor{darkgreen}{$+26.9$~kLOC} \\
+\textcolor{blue}{C++} & \textcolor{blue}{$-59.8$~kLOC} & \textcolor{blue}{$+0$~kLOC} \\
+\textcolor{violet}{C} & \textcolor{violet}{$-4.9$~kLOC} & \textcolor{violet}{$+0$~kLOC} \\
+\end{tabular}
+
+\vspace{0.25 cm}
+\textcolor{gray}{\scriptsize kLOC = thousands of non-blank, non-comment lines of code counted by \mintinline{bash}{cloc}}
+
+\textcolor{gray}{\scriptsize Awkward 2.x is 75\% done; the above is a projection}
+\end{center}
+\end{frame}
+
 
 \end{document}
 
