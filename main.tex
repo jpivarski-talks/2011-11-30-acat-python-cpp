@@ -241,13 +241,81 @@ interface with C++.
 \end{frame}
 
 \begin{frame}{Issue \#3: Releasing the GIL}
+\large
+\vspace{0.5 cm}
+\hfill \includegraphics[height=4 cm]{python-gil-eat-concurrency.jpg}
 
-\hfill \includegraphics[width=0.25\linewidth]{python-gil-eat-concurrency.jpg}
+\vspace{-3.75 cm}
+If you're using pybind11, be aware that it does not release
 
-\hfill \includegraphics[width=0.5\linewidth]{awkwardforth-gil-plots.png}
+Python's GIL by default.
 
+\vspace{0.25 cm}
+{\small \textcolor{gray}{(See \mintinline{c++}{py::gil_scoped_acquire}, \mintinline{c++}{py::gil_scoped_release},}
+
+\textcolor{gray}{and \mintinline{c++}{py::call_guard}.)}}
+
+\vspace{0.5 cm}
+\uncover<2->{Furthermore, you can't release it if you ever need to change}
+
+\uncover<2->{any Python object, even a reference count.}
+
+\vspace{0.5 cm}
+\uncover<3->{Awkward Array's C++ objects hold references to Python objects (mostly NumPy arrays) and decrement the reference count if the C++ object is deleted. Since that could happen at any time, we can't release the GIL, which undermines parallel processing.}
 \end{frame}
 
+\begin{frame}{Issue \#4: Algorithm visibility}
+\large
+
+\vspace{0.25 cm}
+The {\it final} reason for C++ $\to$ Python refactoring: third-party libraries like Dask and JAX couldn't ``see'' enough of what Awkward Array was doing.
+
+\only<1>{\includegraphics[width=\linewidth]{awkward-1-layers-problem.pdf}}\only<2>{\includegraphics[width=\linewidth]{awkward-2-layers-solution.pdf}}
+\end{frame}
+
+\begin{frame}[fragile]{Issue \#4: Algorithm visibility}
+\vspace{0.5 cm}
+
+\large
+These libraries use ``tracers'' to inspect a path through Python code, like this:
+
+\small
+\begin{minted}{python}
+>>> import numpy as np
+>>> class Tracer(np.lib.mixins.NDArrayOperatorsMixin):
+...     def __init__(self):
+...         self.functions = []
+...     def __array_ufunc__(self, ufunc, method, *inputs, **kwargs):
+...         self.functions.append(ufunc.__name__)
+...         return self
+... 
+>>> t = Tracer()
+>>> np.sin(t)**2 + np.cos(t)**2
+<__main__.Tracer object at 0x7ff2a0f33e80>
+>>> t.functions
+['sin', 'power', 'cos', 'power', 'add']
+\end{minted}
+
+\large
+\vspace{0.5 cm}
+Tracers can see binary ops and functions, but calls out of Python are black boxes.
+\end{frame}
+
+\begin{frame}{Issue \#4: Algorithm visibility}
+\large
+\vspace{0.5 cm}
+
+The ``tree structures'' (mid-level) of Awkward Array is too coarse for these libraries because the third-party libraries don't recognize arrays of trees.
+
+\vspace{0.5 cm}
+They {\it do} recognize simple arrays of numbers (our ``kernel,'' or low-level).
+
+\vspace{0.5 cm}
+See Anish Biswas's presentation at \textcolor{blue}{\href{https://indico.cern.ch/event/1033648}{https://indico.cern.ch/event/1033648}} for a heroic attempt to integrate Awkward Array and JAX using PyTrees.
+
+\vspace{0.5 cm}
+\uncover<2->{\textcolor{darkorange}{\bf This last problem with Awkward Array's C++ layer is the one that finally convinced us to change.}}
+\end{frame}
 
 \end{document}
 
