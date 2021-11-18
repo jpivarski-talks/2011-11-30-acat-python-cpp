@@ -15,11 +15,11 @@
    width="606.70648"
    height="261.17853"
    viewBox="0 0 606.70648 261.17852"
-   sodipodi:docname="pivarski-one-slide-summary.svg"
+   sodipodi:docname="pivarski-one-slide-summary-3.svg"
    inkscape:version="0.92.5 (2060ec1f9f, 2020-04-08)"><metadata
      id="metadata8"><rdf:RDF><cc:Work
          rdf:about=""><dc:format>image/svg+xml</dc:format><dc:type
-           rdf:resource="http://purl.org/dc/dcmitype/StillImage" /><dc:title /></cc:Work></rdf:RDF></metadata><defs
+           rdf:resource="http://purl.org/dc/dcmitype/StillImage" /><dc:title></dc:title></cc:Work></rdf:RDF></metadata><defs
      id="defs6" /><sodipodi:namedview
      pagecolor="#ffffff"
      bordercolor="#666666"
@@ -34,10 +34,10 @@
      id="namedview4"
      showgrid="false"
      inkscape:zoom="1.391588"
-     inkscape:cx="148.03402"
+     inkscape:cx="189.71302"
      inkscape:cy="122.37027"
-     inkscape:window-x="1961"
-     inkscape:window-y="53"
+     inkscape:window-x="0"
+     inkscape:window-y="34"
      inkscape:window-maximized="0"
      inkscape:current-layer="g12"
      fit-margin-left="0"
@@ -149,6 +149,7 @@
      y="0"
      x="0 4.9319634 9.8639269 14.795891 19.727854 24.659817">output</tspan></text>
 
+
 <text
    id="text20"
    style="font-variant:normal;font-weight:normal;font-size:9.86392689px;font-family:'Ubuntu Mono';-inkscape-font-specification:UbuntuMono-Regular;writing-mode:lr-tb;fill:#000000;fill-opacity:1;fill-rule:nonzero;stroke:none"
@@ -157,6 +158,7 @@
      sodipodi:role="line"
      y="0"
      x="0 4.9319634 9.8639269 14.795891">= []</tspan></text>
+
 
 <text
    id="text24"
@@ -167,6 +169,7 @@
      y="0"
      x="0 4.9319634 9.8639269">for</tspan></text>
 
+
 <text
    id="text28"
    style="font-variant:normal;font-weight:normal;font-size:9.86392689px;font-family:'Ubuntu Mono';-inkscape-font-specification:UbuntuMono-Regular;writing-mode:lr-tb;fill:#008000;fill-opacity:1;fill-rule:nonzero;stroke:none"
@@ -175,6 +178,7 @@
      sodipodi:role="line"
      y="0"
      x="0 4.9319634 9.8639269 14.795891 19.727854 24.659817 29.591782">sublist</tspan></text>
+
 
 <text
    id="text32"
@@ -185,6 +189,7 @@
      y="0"
      x="0 4.9319634">in</tspan></text>
 
+
 <text
    id="text36"
    style="font-variant:normal;font-weight:normal;font-size:9.86392689px;font-family:'Ubuntu Mono';-inkscape-font-specification:UbuntuMono-Regular;writing-mode:lr-tb;fill:#008000;fill-opacity:1;fill-rule:nonzero;stroke:none"
@@ -193,6 +198,7 @@
      sodipodi:role="line"
      y="0"
      x="0 4.9319634 9.8639269 14.795891 19.727854 24.659817 29.591782 34.523743 39.455708 44.387672 49.319633 54.251598 59.183563 64.115524">python_objects</tspan></text>
+
 
 <text
    id="text42"
@@ -205,6 +211,7 @@
      y="10.85031"
      x="-143.02695"> </tspan></text>
 
+
 <text
    id="text46"
    style="font-variant:normal;font-weight:normal;font-size:9.86392689px;font-family:'Ubuntu Mono';-inkscape-font-specification:UbuntuMono-Regular;writing-mode:lr-tb;fill:#008000;fill-opacity:1;fill-rule:nonzero;stroke:none"
@@ -213,6 +220,7 @@
      sodipodi:role="line"
      y="0"
      x="0 4.9319634 9.8639269 14.795891">tmp1</tspan></text>
+
 
 <text
    id="text52"
@@ -226,6 +234,7 @@
      y="10.85033"
      x="-44.387661"> </tspan></text>
 
+
 <text
    id="text56"
    style="font-variant:normal;font-weight:normal;font-size:9.86392689px;font-family:'Ubuntu Mono';-inkscape-font-specification:UbuntuMono-Regular;writing-mode:lr-tb;fill:#0000ff;fill-opacity:1;fill-rule:nonzero;stroke:none"
@@ -234,6 +243,7 @@
      sodipodi:role="line"
      y="0"
      x="0 4.9319634 9.8639269">for</tspan></text>
+
 
 <text
    id="text60"
@@ -244,6 +254,7 @@
      y="0"
      x="0 4.9319634 9.8639269 14.795891 19.727854 24.659817">record</tspan></text>
 
+
 <text
    id="text64"
    style="font-variant:normal;font-weight:normal;font-size:9.86392689px;font-family:'Ubuntu Mono';-inkscape-font-specification:UbuntuMono-Regular;writing-mode:lr-tb;fill:#0000ff;fill-opacity:1;fill-rule:nonzero;stroke:none"
@@ -253,6 +264,7 @@
      y="0"
      x="0 4.9319634">in</tspan></text>
 
+
 <text
    id="text68"
    style="font-variant:normal;font-weight:normal;font-size:9.86392689px;font-family:'Ubuntu Mono';-inkscape-font-specification:UbuntuMono-Regular;writing-mode:lr-tb;fill:#008000;fill-opacity:1;fill-rule:nonzero;stroke:none"
@@ -261,6 +273,7 @@
      sodipodi:role="line"
      y="0"
      x="0 4.9319634 9.8639269 14.795891 19.727854 24.659817 29.591782">sublist</tspan></text>
+
 
 <text
    id="text74"
@@ -273,6 +286,7 @@
      y="10.85033"
      x="-123.29908"> </tspan></text>
 
+
 <text
    id="text78"
    style="font-variant:normal;font-weight:normal;font-size:9.86392689px;font-family:'Ubuntu Mono';-inkscape-font-specification:UbuntuMono-Regular;writing-mode:lr-tb;fill:#008000;fill-opacity:1;fill-rule:nonzero;stroke:none"
@@ -281,6 +295,7 @@
      sodipodi:role="line"
      y="0"
      x="0 4.9319634 9.8639269 14.795891">tmp2</tspan></text>
+
 
 <text
    id="text84"
@@ -294,6 +309,7 @@
      y="10.85031"
      x="-64.115532"> </tspan></text>
 
+
 <text
    id="text88"
    style="font-variant:normal;font-weight:normal;font-size:9.86392689px;font-family:'Ubuntu Mono';-inkscape-font-specification:UbuntuMono-Regular;writing-mode:lr-tb;fill:#0000ff;fill-opacity:1;fill-rule:nonzero;stroke:none"
@@ -302,6 +318,7 @@
      sodipodi:role="line"
      y="0"
      x="0 4.9319634 9.8639269">for</tspan></text>
+
 
 <text
    id="text92"
@@ -312,6 +329,7 @@
      y="0"
      x="0 4.9319634 9.8639269 14.795891 19.727854 24.659817">number</tspan></text>
 
+
 <text
    id="text96"
    style="font-variant:normal;font-weight:normal;font-size:9.86392689px;font-family:'Ubuntu Mono';-inkscape-font-specification:UbuntuMono-Regular;writing-mode:lr-tb;fill:#0000ff;fill-opacity:1;fill-rule:nonzero;stroke:none"
@@ -320,6 +338,7 @@
      sodipodi:role="line"
      y="0"
      x="0 4.9319634">in</tspan></text>
+
 
 <text
    id="text100"
@@ -330,6 +349,7 @@
      y="0"
      x="0 4.9319634 9.8639269 14.795891 19.727854 24.659817">record</tspan></text>
 
+
 <text
    id="text104"
    style="font-variant:normal;font-weight:normal;font-size:9.86392689px;font-family:'Ubuntu Mono';-inkscape-font-specification:UbuntuMono-Regular;writing-mode:lr-tb;fill:#000000;fill-opacity:1;fill-rule:nonzero;stroke:none"
@@ -337,6 +357,7 @@
      id="tspan102"
      y="0"
      x="0">[</tspan></text>
+
 
 <text
    id="text108"
@@ -347,6 +368,7 @@
      y="0"
      x="0 4.9319634 9.8639269">&quot;y&quot;</tspan></text>
 
+
 <text
    id="text112"
    style="font-variant:normal;font-weight:normal;font-size:9.86392689px;font-family:'Ubuntu Mono';-inkscape-font-specification:UbuntuMono-Regular;writing-mode:lr-tb;fill:#000000;fill-opacity:1;fill-rule:nonzero;stroke:none"
@@ -356,6 +378,7 @@
      y="0"
      x="0 4.9319634">][</tspan></text>
 
+
 <text
    id="text116"
    style="font-variant:normal;font-weight:normal;font-size:9.86392689px;font-family:'Ubuntu Mono';-inkscape-font-specification:UbuntuMono-Regular;writing-mode:lr-tb;fill:#ff6600;fill-opacity:1;fill-rule:nonzero;stroke:none"
@@ -364,6 +387,7 @@
      sodipodi:role="line"
      y="0"
      x="0 4.9319634">1:</tspan></text>
+
 
 <text
    id="text122"
@@ -377,6 +401,7 @@
      y="10.85033"
      x="-177.55066"> </tspan></text>
 
+
 <text
    id="text126"
    style="font-variant:normal;font-weight:normal;font-size:9.86392689px;font-family:'Ubuntu Mono';-inkscape-font-specification:UbuntuMono-Regular;writing-mode:lr-tb;fill:#008000;fill-opacity:1;fill-rule:nonzero;stroke:none"
@@ -386,6 +411,7 @@
      y="0"
      x="0 4.9319634 9.8639269 14.795891">tmp2</tspan></text>
 
+
 <text
    id="text130"
    style="font-variant:normal;font-weight:normal;font-size:9.86392689px;font-family:'Ubuntu Mono';-inkscape-font-specification:UbuntuMono-Regular;writing-mode:lr-tb;fill:#000000;fill-opacity:1;fill-rule:nonzero;stroke:none"
@@ -393,6 +419,7 @@
      id="tspan128"
      y="0"
      x="0">.</tspan></text>
+
 
 <text
    id="text134"
@@ -403,6 +430,7 @@
      y="0"
      x="0 4.9319634 9.8639269 14.795891 19.727854 24.659817">append</tspan></text>
 
+
 <text
    id="text138"
    style="font-variant:normal;font-weight:normal;font-size:9.86392689px;font-family:'Ubuntu Mono';-inkscape-font-specification:UbuntuMono-Regular;writing-mode:lr-tb;fill:#000000;fill-opacity:1;fill-rule:nonzero;stroke:none"
@@ -410,6 +438,7 @@
      id="tspan136"
      y="0"
      x="0">(</tspan></text>
+
 
 <text
    id="text142"
@@ -420,6 +449,7 @@
      y="0"
      x="0 4.9319634">np</tspan></text>
 
+
 <text
    id="text146"
    style="font-variant:normal;font-weight:normal;font-size:9.86392689px;font-family:'Ubuntu Mono';-inkscape-font-specification:UbuntuMono-Regular;writing-mode:lr-tb;fill:#ff00ff;fill-opacity:1;fill-rule:nonzero;stroke:none"
@@ -429,6 +459,7 @@
      y="0"
      x="0 4.9319634 9.8639269 14.795891 19.727854 24.659817 29.591782">.square</tspan></text>
 
+
 <text
    id="text150"
    style="font-variant:normal;font-weight:normal;font-size:9.86392689px;font-family:'Ubuntu Mono';-inkscape-font-specification:UbuntuMono-Regular;writing-mode:lr-tb;fill:#000000;fill-opacity:1;fill-rule:nonzero;stroke:none"
@@ -436,6 +467,7 @@
      id="tspan148"
      y="0"
      x="0">(</tspan></text>
+
 
 <text
    id="text154"
@@ -445,6 +477,7 @@
      sodipodi:role="line"
      y="0"
      x="0 4.9319634 9.8639269 14.795891 19.727854 24.659817">number</tspan></text>
+
 
 <text
    id="text160"
@@ -458,6 +491,7 @@
      y="10.85031"
      x="-197.2785"> </tspan></text>
 
+
 <text
    id="text164"
    style="font-variant:normal;font-weight:normal;font-size:9.86392689px;font-family:'Ubuntu Mono';-inkscape-font-specification:UbuntuMono-Regular;writing-mode:lr-tb;fill:#008000;fill-opacity:1;fill-rule:nonzero;stroke:none"
@@ -467,6 +501,7 @@
      y="0"
      x="0 4.9319634 9.8639269 14.795891">tmp1</tspan></text>
 
+
 <text
    id="text168"
    style="font-variant:normal;font-weight:normal;font-size:9.86392689px;font-family:'Ubuntu Mono';-inkscape-font-specification:UbuntuMono-Regular;writing-mode:lr-tb;fill:#000000;fill-opacity:1;fill-rule:nonzero;stroke:none"
@@ -474,6 +509,7 @@
      id="tspan166"
      y="0"
      x="0">.</tspan></text>
+
 
 <text
    id="text172"
@@ -484,6 +520,7 @@
      y="0"
      x="0 4.9319634 9.8639269 14.795891 19.727854 24.659817">append</tspan></text>
 
+
 <text
    id="text176"
    style="font-variant:normal;font-weight:normal;font-size:9.86392689px;font-family:'Ubuntu Mono';-inkscape-font-specification:UbuntuMono-Regular;writing-mode:lr-tb;fill:#000000;fill-opacity:1;fill-rule:nonzero;stroke:none"
@@ -491,6 +528,7 @@
      id="tspan174"
      y="0"
      x="0">(</tspan></text>
+
 
 <text
    id="text180"
@@ -500,6 +538,7 @@
      sodipodi:role="line"
      y="0"
      x="0 4.9319634 9.8639269 14.795891">tmp2</tspan></text>
+
 
 <text
    id="text186"
@@ -512,6 +551,7 @@
      y="10.85033"
      x="-118.36712"> </tspan></text>
 
+
 <text
    id="text190"
    style="font-variant:normal;font-weight:normal;font-size:9.86392689px;font-family:'Ubuntu Mono';-inkscape-font-specification:UbuntuMono-Regular;writing-mode:lr-tb;fill:#008000;fill-opacity:1;fill-rule:nonzero;stroke:none"
@@ -521,6 +561,7 @@
      y="0"
      x="0 4.9319634 9.8639269 14.795891 19.727854 24.659817">output</tspan></text>
 
+
 <text
    id="text194"
    style="font-variant:normal;font-weight:normal;font-size:9.86392689px;font-family:'Ubuntu Mono';-inkscape-font-specification:UbuntuMono-Regular;writing-mode:lr-tb;fill:#000000;fill-opacity:1;fill-rule:nonzero;stroke:none"
@@ -528,6 +569,7 @@
      id="tspan192"
      y="0"
      x="0">.</tspan></text>
+
 
 <text
    id="text198"
@@ -538,6 +580,7 @@
      y="0"
      x="0 4.9319634 9.8639269 14.795891 19.727854 24.659817">append</tspan></text>
 
+
 <text
    id="text202"
    style="font-variant:normal;font-weight:normal;font-size:9.86392689px;font-family:'Ubuntu Mono';-inkscape-font-specification:UbuntuMono-Regular;writing-mode:lr-tb;fill:#000000;fill-opacity:1;fill-rule:nonzero;stroke:none"
@@ -545,6 +588,7 @@
      id="tspan200"
      y="0"
      x="0">(</tspan></text>
+
 
 <text
    id="text206"
@@ -555,6 +599,7 @@
      y="0"
      x="0 4.9319634 9.8639269 14.795891">tmp1</tspan></text>
 
+
 <text
    id="text210"
    style="font-variant:normal;font-weight:normal;font-size:9.86392689px;font-family:'Ubuntu Mono';-inkscape-font-specification:UbuntuMono-Regular;writing-mode:lr-tb;fill:#000000;fill-opacity:1;fill-rule:nonzero;stroke:none"
@@ -562,6 +607,7 @@
      id="tspan208"
      y="0"
      x="0">)</tspan></text>
+
 
 </g>
 
@@ -776,6 +822,7 @@
      y="0"
      x="0 4.9319634 9.8639269 14.795891 19.727854">array</tspan></text>
 
+
 <text
    id="text376"
    style="font-variant:normal;font-weight:normal;font-size:9.86392689px;font-family:'Ubuntu Mono';-inkscape-font-specification:UbuntuMono-Regular;writing-mode:lr-tb;fill:#000000;fill-opacity:1;fill-rule:nonzero;stroke:none"
@@ -784,6 +831,7 @@
      sodipodi:role="line"
      y="0"
      x="0 4.9319634">= </tspan></text>
+
 
 <text
    id="text380"
@@ -794,6 +842,7 @@
      y="0"
      x="0 4.9319634">ak</tspan></text>
 
+
 <text
    id="text384"
    style="font-variant:normal;font-weight:normal;font-size:9.86392689px;font-family:'Ubuntu Mono';-inkscape-font-specification:UbuntuMono-Regular;writing-mode:lr-tb;fill:#000000;fill-opacity:1;fill-rule:nonzero;stroke:none"
@@ -801,6 +850,7 @@
      id="tspan382"
      y="0"
      x="0">.</tspan></text>
+
 
 <text
    id="text388"
@@ -810,6 +860,7 @@
      sodipodi:role="line"
      y="0"
      x="0 4.9319634 9.8639269 14.795891 19.727854">Array</tspan></text>
+
 
 <text
    id="text394"
@@ -824,6 +875,7 @@
      y="10.85032"
      x="-78.911415 -59.183563 -54.251598"> [{</tspan></text>
 
+
 <text
    id="text398"
    style="font-variant:normal;font-weight:normal;font-size:9.86392689px;font-family:'Ubuntu Mono';-inkscape-font-specification:UbuntuMono-Regular;writing-mode:lr-tb;fill:#ff6600;fill-opacity:1;fill-rule:nonzero;stroke:none"
@@ -832,6 +884,7 @@
      sodipodi:role="line"
      y="0"
      x="0 4.9319634 9.8639269">&quot;x&quot;</tspan></text>
+
 
 <text
    id="text402"
@@ -842,6 +895,7 @@
      y="0"
      x="0 4.9319634">: </tspan></text>
 
+
 <text
    id="text406"
    style="font-variant:normal;font-weight:normal;font-size:9.86392689px;font-family:'Ubuntu Mono';-inkscape-font-specification:UbuntuMono-Regular;writing-mode:lr-tb;fill:#808080;fill-opacity:1;fill-rule:nonzero;stroke:none"
@@ -850,6 +904,7 @@
      sodipodi:role="line"
      y="0"
      x="0 4.9319634 9.8639269">1.1</tspan></text>
+
 
 <text
    id="text410"
@@ -860,6 +915,7 @@
      y="0"
      x="0 4.9319634">, </tspan></text>
 
+
 <text
    id="text414"
    style="font-variant:normal;font-weight:normal;font-size:9.86392689px;font-family:'Ubuntu Mono';-inkscape-font-specification:UbuntuMono-Regular;writing-mode:lr-tb;fill:#ff6600;fill-opacity:1;fill-rule:nonzero;stroke:none"
@@ -868,6 +924,7 @@
      sodipodi:role="line"
      y="0"
      x="0 4.9319634 9.8639269">&quot;y&quot;</tspan></text>
+
 
 <text
    id="text418"
@@ -878,6 +935,7 @@
      y="0"
      x="0 4.9319634 9.8639269">: [</tspan></text>
 
+
 <text
    id="text422"
    style="font-variant:normal;font-weight:normal;font-size:9.86392689px;font-family:'Ubuntu Mono';-inkscape-font-specification:UbuntuMono-Regular;writing-mode:lr-tb;fill:#808080;fill-opacity:1;fill-rule:nonzero;stroke:none"
@@ -885,6 +943,7 @@
      id="tspan420"
      y="0"
      x="0">1</tspan></text>
+
 
 <text
    id="text426"
@@ -895,6 +954,7 @@
      y="0"
      x="0 4.9319634 9.8639269 14.795891 19.727854">]}, {</tspan></text>
 
+
 <text
    id="text430"
    style="font-variant:normal;font-weight:normal;font-size:9.86392689px;font-family:'Ubuntu Mono';-inkscape-font-specification:UbuntuMono-Regular;writing-mode:lr-tb;fill:#ff6600;fill-opacity:1;fill-rule:nonzero;stroke:none"
@@ -903,6 +963,7 @@
      sodipodi:role="line"
      y="0"
      x="0 4.9319634 9.8639269">&quot;x&quot;</tspan></text>
+
 
 <text
    id="text434"
@@ -913,6 +974,7 @@
      y="0"
      x="0 4.9319634">: </tspan></text>
 
+
 <text
    id="text438"
    style="font-variant:normal;font-weight:normal;font-size:9.86392689px;font-family:'Ubuntu Mono';-inkscape-font-specification:UbuntuMono-Regular;writing-mode:lr-tb;fill:#808080;fill-opacity:1;fill-rule:nonzero;stroke:none"
@@ -921,6 +983,7 @@
      sodipodi:role="line"
      y="0"
      x="0 4.9319634 9.8639269">2.2</tspan></text>
+
 
 <text
    id="text442"
@@ -931,6 +994,7 @@
      y="0"
      x="0 4.9319634">, </tspan></text>
 
+
 <text
    id="text446"
    style="font-variant:normal;font-weight:normal;font-size:9.86392689px;font-family:'Ubuntu Mono';-inkscape-font-specification:UbuntuMono-Regular;writing-mode:lr-tb;fill:#ff6600;fill-opacity:1;fill-rule:nonzero;stroke:none"
@@ -939,6 +1003,7 @@
      sodipodi:role="line"
      y="0"
      x="0 4.9319634 9.8639269">&quot;y&quot;</tspan></text>
+
 
 <text
    id="text450"
@@ -949,6 +1014,7 @@
      y="0"
      x="0 4.9319634 9.8639269">: [</tspan></text>
 
+
 <text
    id="text454"
    style="font-variant:normal;font-weight:normal;font-size:9.86392689px;font-family:'Ubuntu Mono';-inkscape-font-specification:UbuntuMono-Regular;writing-mode:lr-tb;fill:#808080;fill-opacity:1;fill-rule:nonzero;stroke:none"
@@ -956,6 +1022,7 @@
      id="tspan452"
      y="0"
      x="0">1</tspan></text>
+
 
 <text
    id="text458"
@@ -966,6 +1033,7 @@
      y="0"
      x="0 4.9319634">, </tspan></text>
 
+
 <text
    id="text462"
    style="font-variant:normal;font-weight:normal;font-size:9.86392689px;font-family:'Ubuntu Mono';-inkscape-font-specification:UbuntuMono-Regular;writing-mode:lr-tb;fill:#808080;fill-opacity:1;fill-rule:nonzero;stroke:none"
@@ -973,6 +1041,7 @@
      id="tspan460"
      y="0"
      x="0">2</tspan></text>
+
 
 <text
    id="text466"
@@ -983,6 +1052,7 @@
      y="0"
      x="0 4.9319634 9.8639269 14.795891 19.727854">]}, {</tspan></text>
 
+
 <text
    id="text470"
    style="font-variant:normal;font-weight:normal;font-size:9.86392689px;font-family:'Ubuntu Mono';-inkscape-font-specification:UbuntuMono-Regular;writing-mode:lr-tb;fill:#ff6600;fill-opacity:1;fill-rule:nonzero;stroke:none"
@@ -991,6 +1061,7 @@
      sodipodi:role="line"
      y="0"
      x="0 4.9319634 9.8639269">&quot;x&quot;</tspan></text>
+
 
 <text
    id="text474"
@@ -1001,6 +1072,7 @@
      y="0"
      x="0 4.9319634">: </tspan></text>
 
+
 <text
    id="text478"
    style="font-variant:normal;font-weight:normal;font-size:9.86392689px;font-family:'Ubuntu Mono';-inkscape-font-specification:UbuntuMono-Regular;writing-mode:lr-tb;fill:#808080;fill-opacity:1;fill-rule:nonzero;stroke:none"
@@ -1009,6 +1081,7 @@
      sodipodi:role="line"
      y="0"
      x="0 4.9319634 9.8639269">3.3</tspan></text>
+
 
 <text
    id="text482"
@@ -1019,6 +1092,7 @@
      y="0"
      x="0 4.9319634">, </tspan></text>
 
+
 <text
    id="text486"
    style="font-variant:normal;font-weight:normal;font-size:9.86392689px;font-family:'Ubuntu Mono';-inkscape-font-specification:UbuntuMono-Regular;writing-mode:lr-tb;fill:#ff6600;fill-opacity:1;fill-rule:nonzero;stroke:none"
@@ -1027,6 +1101,7 @@
      sodipodi:role="line"
      y="0"
      x="0 4.9319634 9.8639269">&quot;y&quot;</tspan></text>
+
 
 <text
    id="text490"
@@ -1037,6 +1112,7 @@
      y="0"
      x="0 4.9319634 9.8639269">: [</tspan></text>
 
+
 <text
    id="text494"
    style="font-variant:normal;font-weight:normal;font-size:9.86392689px;font-family:'Ubuntu Mono';-inkscape-font-specification:UbuntuMono-Regular;writing-mode:lr-tb;fill:#808080;fill-opacity:1;fill-rule:nonzero;stroke:none"
@@ -1044,6 +1120,7 @@
      id="tspan492"
      y="0"
      x="0">1</tspan></text>
+
 
 <text
    id="text498"
@@ -1054,6 +1131,7 @@
      y="0"
      x="0 4.9319634">, </tspan></text>
 
+
 <text
    id="text502"
    style="font-variant:normal;font-weight:normal;font-size:9.86392689px;font-family:'Ubuntu Mono';-inkscape-font-specification:UbuntuMono-Regular;writing-mode:lr-tb;fill:#808080;fill-opacity:1;fill-rule:nonzero;stroke:none"
@@ -1061,6 +1139,7 @@
      id="tspan500"
      y="0"
      x="0">2</tspan></text>
+
 
 <text
    id="text506"
@@ -1071,6 +1150,7 @@
      y="0"
      x="0 4.9319634">, </tspan></text>
 
+
 <text
    id="text510"
    style="font-variant:normal;font-weight:normal;font-size:9.86392689px;font-family:'Ubuntu Mono';-inkscape-font-specification:UbuntuMono-Regular;writing-mode:lr-tb;fill:#808080;fill-opacity:1;fill-rule:nonzero;stroke:none"
@@ -1078,6 +1158,7 @@
      id="tspan508"
      y="0"
      x="0">3</tspan></text>
+
 
 <text
    id="text518"
@@ -1096,6 +1177,7 @@
      y="21.70064"
      x="-374.82922 -355.10138 -350.16943"> [{</tspan></text>
 
+
 <text
    id="text522"
    style="font-variant:normal;font-weight:normal;font-size:9.86392689px;font-family:'Ubuntu Mono';-inkscape-font-specification:UbuntuMono-Regular;writing-mode:lr-tb;fill:#ff6600;fill-opacity:1;fill-rule:nonzero;stroke:none"
@@ -1104,6 +1186,7 @@
      sodipodi:role="line"
      y="0"
      x="0 4.9319634 9.8639269">&quot;x&quot;</tspan></text>
+
 
 <text
    id="text526"
@@ -1114,6 +1197,7 @@
      y="0"
      x="0 4.9319634">: </tspan></text>
 
+
 <text
    id="text530"
    style="font-variant:normal;font-weight:normal;font-size:9.86392689px;font-family:'Ubuntu Mono';-inkscape-font-specification:UbuntuMono-Regular;writing-mode:lr-tb;fill:#808080;fill-opacity:1;fill-rule:nonzero;stroke:none"
@@ -1122,6 +1206,7 @@
      sodipodi:role="line"
      y="0"
      x="0 4.9319634 9.8639269">4.4</tspan></text>
+
 
 <text
    id="text534"
@@ -1132,6 +1217,7 @@
      y="0"
      x="0 4.9319634">, </tspan></text>
 
+
 <text
    id="text538"
    style="font-variant:normal;font-weight:normal;font-size:9.86392689px;font-family:'Ubuntu Mono';-inkscape-font-specification:UbuntuMono-Regular;writing-mode:lr-tb;fill:#ff6600;fill-opacity:1;fill-rule:nonzero;stroke:none"
@@ -1140,6 +1226,7 @@
      sodipodi:role="line"
      y="0"
      x="0 4.9319634 9.8639269">&quot;y&quot;</tspan></text>
+
 
 <text
    id="text542"
@@ -1150,6 +1237,7 @@
      y="0"
      x="0 4.9319634 9.8639269">: [</tspan></text>
 
+
 <text
    id="text546"
    style="font-variant:normal;font-weight:normal;font-size:9.86392689px;font-family:'Ubuntu Mono';-inkscape-font-specification:UbuntuMono-Regular;writing-mode:lr-tb;fill:#808080;fill-opacity:1;fill-rule:nonzero;stroke:none"
@@ -1157,6 +1245,7 @@
      id="tspan544"
      y="0"
      x="0">1</tspan></text>
+
 
 <text
    id="text550"
@@ -1167,6 +1256,7 @@
      y="0"
      x="0 4.9319634">, </tspan></text>
 
+
 <text
    id="text554"
    style="font-variant:normal;font-weight:normal;font-size:9.86392689px;font-family:'Ubuntu Mono';-inkscape-font-specification:UbuntuMono-Regular;writing-mode:lr-tb;fill:#808080;fill-opacity:1;fill-rule:nonzero;stroke:none"
@@ -1174,6 +1264,7 @@
      id="tspan552"
      y="0"
      x="0">2</tspan></text>
+
 
 <text
    id="text558"
@@ -1184,6 +1275,7 @@
      y="0"
      x="0 4.9319634">, </tspan></text>
 
+
 <text
    id="text562"
    style="font-variant:normal;font-weight:normal;font-size:9.86392689px;font-family:'Ubuntu Mono';-inkscape-font-specification:UbuntuMono-Regular;writing-mode:lr-tb;fill:#808080;fill-opacity:1;fill-rule:nonzero;stroke:none"
@@ -1191,6 +1283,7 @@
      id="tspan560"
      y="0"
      x="0">3</tspan></text>
+
 
 <text
    id="text566"
@@ -1201,6 +1294,7 @@
      y="0"
      x="0 4.9319634">, </tspan></text>
 
+
 <text
    id="text570"
    style="font-variant:normal;font-weight:normal;font-size:9.86392689px;font-family:'Ubuntu Mono';-inkscape-font-specification:UbuntuMono-Regular;writing-mode:lr-tb;fill:#808080;fill-opacity:1;fill-rule:nonzero;stroke:none"
@@ -1208,6 +1302,7 @@
      id="tspan568"
      y="0"
      x="0">4</tspan></text>
+
 
 <text
    id="text574"
@@ -1218,6 +1313,7 @@
      y="0"
      x="0 4.9319634 9.8639269 14.795891 19.727854">]}, {</tspan></text>
 
+
 <text
    id="text578"
    style="font-variant:normal;font-weight:normal;font-size:9.86392689px;font-family:'Ubuntu Mono';-inkscape-font-specification:UbuntuMono-Regular;writing-mode:lr-tb;fill:#ff6600;fill-opacity:1;fill-rule:nonzero;stroke:none"
@@ -1226,6 +1322,7 @@
      sodipodi:role="line"
      y="0"
      x="0 4.9319634 9.8639269">&quot;x&quot;</tspan></text>
+
 
 <text
    id="text582"
@@ -1236,6 +1333,7 @@
      y="0"
      x="0 4.9319634">: </tspan></text>
 
+
 <text
    id="text586"
    style="font-variant:normal;font-weight:normal;font-size:9.86392689px;font-family:'Ubuntu Mono';-inkscape-font-specification:UbuntuMono-Regular;writing-mode:lr-tb;fill:#808080;fill-opacity:1;fill-rule:nonzero;stroke:none"
@@ -1244,6 +1342,7 @@
      sodipodi:role="line"
      y="0"
      x="0 4.9319634 9.8639269">5.5</tspan></text>
+
 
 <text
    id="text590"
@@ -1254,6 +1353,7 @@
      y="0"
      x="0 4.9319634">, </tspan></text>
 
+
 <text
    id="text594"
    style="font-variant:normal;font-weight:normal;font-size:9.86392689px;font-family:'Ubuntu Mono';-inkscape-font-specification:UbuntuMono-Regular;writing-mode:lr-tb;fill:#ff6600;fill-opacity:1;fill-rule:nonzero;stroke:none"
@@ -1262,6 +1362,7 @@
      sodipodi:role="line"
      y="0"
      x="0 4.9319634 9.8639269">&quot;y&quot;</tspan></text>
+
 
 <text
    id="text598"
@@ -1272,6 +1373,7 @@
      y="0"
      x="0 4.9319634 9.8639269">: [</tspan></text>
 
+
 <text
    id="text602"
    style="font-variant:normal;font-weight:normal;font-size:9.86392689px;font-family:'Ubuntu Mono';-inkscape-font-specification:UbuntuMono-Regular;writing-mode:lr-tb;fill:#808080;fill-opacity:1;fill-rule:nonzero;stroke:none"
@@ -1279,6 +1381,7 @@
      id="tspan600"
      y="0"
      x="0">1</tspan></text>
+
 
 <text
    id="text606"
@@ -1289,6 +1392,7 @@
      y="0"
      x="0 4.9319634">, </tspan></text>
 
+
 <text
    id="text610"
    style="font-variant:normal;font-weight:normal;font-size:9.86392689px;font-family:'Ubuntu Mono';-inkscape-font-specification:UbuntuMono-Regular;writing-mode:lr-tb;fill:#808080;fill-opacity:1;fill-rule:nonzero;stroke:none"
@@ -1296,6 +1400,7 @@
      id="tspan608"
      y="0"
      x="0">2</tspan></text>
+
 
 <text
    id="text614"
@@ -1306,6 +1411,7 @@
      y="0"
      x="0 4.9319634">, </tspan></text>
 
+
 <text
    id="text618"
    style="font-variant:normal;font-weight:normal;font-size:9.86392689px;font-family:'Ubuntu Mono';-inkscape-font-specification:UbuntuMono-Regular;writing-mode:lr-tb;fill:#808080;fill-opacity:1;fill-rule:nonzero;stroke:none"
@@ -1313,6 +1419,7 @@
      id="tspan616"
      y="0"
      x="0">3</tspan></text>
+
 
 <text
    id="text622"
@@ -1323,6 +1430,7 @@
      y="0"
      x="0 4.9319634">, </tspan></text>
 
+
 <text
    id="text626"
    style="font-variant:normal;font-weight:normal;font-size:9.86392689px;font-family:'Ubuntu Mono';-inkscape-font-specification:UbuntuMono-Regular;writing-mode:lr-tb;fill:#808080;fill-opacity:1;fill-rule:nonzero;stroke:none"
@@ -1330,6 +1438,7 @@
      id="tspan624"
      y="0"
      x="0">4</tspan></text>
+
 
 <text
    id="text630"
@@ -1340,6 +1449,7 @@
      y="0"
      x="0 4.9319634">, </tspan></text>
 
+
 <text
    id="text634"
    style="font-variant:normal;font-weight:normal;font-size:9.86392689px;font-family:'Ubuntu Mono';-inkscape-font-specification:UbuntuMono-Regular;writing-mode:lr-tb;fill:#808080;fill-opacity:1;fill-rule:nonzero;stroke:none"
@@ -1347,6 +1457,7 @@
      id="tspan632"
      y="0"
      x="0">5</tspan></text>
+
 
 <text
    id="text640"
@@ -1360,6 +1471,7 @@
      sodipodi:role="line"
      y="10.85032"
      x="-325.50958 -320.57764">])</tspan></text>
+
 
 </g>
 
@@ -1376,9 +1488,10 @@
 
 
 
+
 <g
    id="g1231"
-   transform="translate(-3.3178451)"><text
+   transform="translate(-3.3178451,-9)"><text
    id="text214"
    style="font-variant:normal;font-weight:normal;font-size:9.86392689px;font-family:'Ubuntu Mono';-inkscape-font-specification:UbuntuMono-Regular;writing-mode:lr-tb;fill:#008000;fill-opacity:1;fill-rule:nonzero;stroke:none"
    transform="translate(17.565022,114.9189)"><tspan
@@ -1386,6 +1499,7 @@
      sodipodi:role="line"
      y="0"
      x="0 4.9319634 9.8639269 14.795891 19.727854 24.659817">output</tspan></text>
+
 
 <text
    id="text218"
@@ -1396,6 +1510,7 @@
      y="0"
      x="0 4.9319634">= </tspan></text>
 
+
 <text
    id="text222"
    style="font-variant:normal;font-weight:normal;font-size:9.86392689px;font-family:'Ubuntu Mono';-inkscape-font-specification:UbuntuMono-Regular;writing-mode:lr-tb;fill:#008000;fill-opacity:1;fill-rule:nonzero;stroke:none"
@@ -1405,6 +1520,7 @@
      y="0"
      x="0 4.9319634">np</tspan></text>
 
+
 <text
    id="text226"
    style="font-variant:normal;font-weight:normal;font-size:9.86392689px;font-family:'Ubuntu Mono';-inkscape-font-specification:UbuntuMono-Regular;writing-mode:lr-tb;fill:#cc00ff;fill-opacity:1;fill-rule:nonzero;stroke:none"
@@ -1412,6 +1528,7 @@
      id="tspan224"
      y="0"
      x="0">.</tspan></text>
+
 
 <text
    id="text230"
@@ -1422,6 +1539,7 @@
      y="0"
      x="0 4.9319634 9.8639269 14.795891 19.727854 24.659817">square</tspan></text>
 
+
 <text
    id="text234"
    style="font-variant:normal;font-weight:normal;font-size:9.86392689px;font-family:'Ubuntu Mono';-inkscape-font-specification:UbuntuMono-Regular;writing-mode:lr-tb;fill:#000000;fill-opacity:1;fill-rule:nonzero;stroke:none"
@@ -1429,6 +1547,7 @@
      id="tspan232"
      y="0"
      x="0">(</tspan></text>
+
 
 <text
    id="text238"
@@ -1439,6 +1558,7 @@
      y="0"
      x="0 4.9319634 9.8639269 14.795891 19.727854">array</tspan></text>
 
+
 <text
    id="text242"
    style="font-variant:normal;font-weight:normal;font-size:9.86392689px;font-family:'Ubuntu Mono';-inkscape-font-specification:UbuntuMono-Regular;writing-mode:lr-tb;fill:#000000;fill-opacity:1;fill-rule:nonzero;stroke:none"
@@ -1446,6 +1566,7 @@
      id="tspan240"
      y="0"
      x="0">[</tspan></text>
+
 
 <text
    id="text246"
@@ -1456,6 +1577,7 @@
      y="0"
      x="0 4.9319634 9.8639269">&quot;y&quot;</tspan></text>
 
+
 <text
    id="text250"
    style="font-variant:normal;font-weight:normal;font-size:9.86392689px;font-family:'Ubuntu Mono';-inkscape-font-specification:UbuntuMono-Regular;writing-mode:lr-tb;fill:#000000;fill-opacity:1;fill-rule:nonzero;stroke:none"
@@ -1464,6 +1586,7 @@
      sodipodi:role="line"
      y="0"
      x="0 4.9319634">, </tspan></text>
+
 
 <text
    id="text254"
@@ -1474,6 +1597,7 @@
      y="0"
      x="0 4.9319634 9.8639269">...</tspan></text>
 
+
 <text
    id="text258"
    style="font-variant:normal;font-weight:normal;font-size:9.86392689px;font-family:'Ubuntu Mono';-inkscape-font-specification:UbuntuMono-Regular;writing-mode:lr-tb;fill:#000000;fill-opacity:1;fill-rule:nonzero;stroke:none"
@@ -1483,6 +1607,7 @@
      y="0"
      x="0 4.9319634">, </tspan></text>
 
+
 <text
    id="text262"
    style="font-variant:normal;font-weight:normal;font-size:9.86392689px;font-family:'Ubuntu Mono';-inkscape-font-specification:UbuntuMono-Regular;writing-mode:lr-tb;fill:#ff6600;fill-opacity:1;fill-rule:nonzero;stroke:none"
@@ -1491,6 +1616,7 @@
      sodipodi:role="line"
      y="0"
      x="0 4.9319634">1:</tspan></text>
+
 
 <text
    id="text270"
@@ -1508,6 +1634,7 @@
      y="42.89447"
      x="-164.88046 -145.1526 -140.22064 -135.28868 -130.35672 -125.42475 -120.49279"> [[], [</tspan></text>
 
+
 <text
    id="text274"
    style="font-variant:normal;font-weight:normal;font-size:9.86392689px;font-family:'Ubuntu Mono';-inkscape-font-specification:UbuntuMono-Regular;writing-mode:lr-tb;fill:#808080;fill-opacity:1;fill-rule:nonzero;stroke:none"
@@ -1515,6 +1642,7 @@
      id="tspan272"
      y="0"
      x="0">4</tspan></text>
+
 
 <text
    id="text278"
@@ -1525,6 +1653,7 @@
      y="0"
      x="0 4.9319634 9.8639269 14.795891">], [</tspan></text>
 
+
 <text
    id="text282"
    style="font-variant:normal;font-weight:normal;font-size:9.86392689px;font-family:'Ubuntu Mono';-inkscape-font-specification:UbuntuMono-Regular;writing-mode:lr-tb;fill:#808080;fill-opacity:1;fill-rule:nonzero;stroke:none"
@@ -1532,6 +1661,7 @@
      id="tspan280"
      y="0"
      x="0">4</tspan></text>
+
 
 <text
    id="text286"
@@ -1542,6 +1672,7 @@
      y="0"
      x="0 4.9319634">, </tspan></text>
 
+
 <text
    id="text290"
    style="font-variant:normal;font-weight:normal;font-size:9.86392689px;font-family:'Ubuntu Mono';-inkscape-font-specification:UbuntuMono-Regular;writing-mode:lr-tb;fill:#808080;fill-opacity:1;fill-rule:nonzero;stroke:none"
@@ -1549,6 +1680,7 @@
      id="tspan288"
      y="0"
      x="0">9</tspan></text>
+
 
 <text
    id="text298"
@@ -1567,6 +1699,7 @@
      y="21.70064"
      x="-93.707306 -73.979454 -69.047485"> [[</tspan></text>
 
+
 <text
    id="text302"
    style="font-variant:normal;font-weight:normal;font-size:9.86392689px;font-family:'Ubuntu Mono';-inkscape-font-specification:UbuntuMono-Regular;writing-mode:lr-tb;fill:#808080;fill-opacity:1;fill-rule:nonzero;stroke:none"
@@ -1574,6 +1707,7 @@
      id="tspan300"
      y="0"
      x="0">4</tspan></text>
+
 
 <text
    id="text306"
@@ -1584,6 +1718,7 @@
      y="0"
      x="0 4.9319634">, </tspan></text>
 
+
 <text
    id="text310"
    style="font-variant:normal;font-weight:normal;font-size:9.86392689px;font-family:'Ubuntu Mono';-inkscape-font-specification:UbuntuMono-Regular;writing-mode:lr-tb;fill:#808080;fill-opacity:1;fill-rule:nonzero;stroke:none"
@@ -1591,6 +1726,7 @@
      id="tspan308"
      y="0"
      x="0">9</tspan></text>
+
 
 <text
    id="text314"
@@ -1601,6 +1737,7 @@
      y="0"
      x="0 4.9319634">, </tspan></text>
 
+
 <text
    id="text318"
    style="font-variant:normal;font-weight:normal;font-size:9.86392689px;font-family:'Ubuntu Mono';-inkscape-font-specification:UbuntuMono-Regular;writing-mode:lr-tb;fill:#808080;fill-opacity:1;fill-rule:nonzero;stroke:none"
@@ -1609,6 +1746,7 @@
      sodipodi:role="line"
      y="0"
      x="0 4.9319634">16</tspan></text>
+
 
 <text
    id="text322"
@@ -1619,6 +1757,7 @@
      y="0"
      x="0 4.9319634 9.8639269 14.795891">], [</tspan></text>
 
+
 <text
    id="text326"
    style="font-variant:normal;font-weight:normal;font-size:9.86392689px;font-family:'Ubuntu Mono';-inkscape-font-specification:UbuntuMono-Regular;writing-mode:lr-tb;fill:#808080;fill-opacity:1;fill-rule:nonzero;stroke:none"
@@ -1626,6 +1765,7 @@
      id="tspan324"
      y="0"
      x="0">4</tspan></text>
+
 
 <text
    id="text330"
@@ -1636,6 +1776,7 @@
      y="0"
      x="0 4.9319634">, </tspan></text>
 
+
 <text
    id="text334"
    style="font-variant:normal;font-weight:normal;font-size:9.86392689px;font-family:'Ubuntu Mono';-inkscape-font-specification:UbuntuMono-Regular;writing-mode:lr-tb;fill:#808080;fill-opacity:1;fill-rule:nonzero;stroke:none"
@@ -1643,6 +1784,7 @@
      id="tspan332"
      y="0"
      x="0">9</tspan></text>
+
 
 <text
    id="text338"
@@ -1653,6 +1795,7 @@
      y="0"
      x="0 4.9319634">, </tspan></text>
 
+
 <text
    id="text342"
    style="font-variant:normal;font-weight:normal;font-size:9.86392689px;font-family:'Ubuntu Mono';-inkscape-font-specification:UbuntuMono-Regular;writing-mode:lr-tb;fill:#808080;fill-opacity:1;fill-rule:nonzero;stroke:none"
@@ -1661,6 +1804,7 @@
      sodipodi:role="line"
      y="0"
      x="0 4.9319634">16</tspan></text>
+
 
 <text
    id="text346"
@@ -1671,6 +1815,7 @@
      y="0"
      x="0 4.9319634">, </tspan></text>
 
+
 <text
    id="text350"
    style="font-variant:normal;font-weight:normal;font-size:9.86392689px;font-family:'Ubuntu Mono';-inkscape-font-specification:UbuntuMono-Regular;writing-mode:lr-tb;fill:#808080;fill-opacity:1;fill-rule:nonzero;stroke:none"
@@ -1679,6 +1824,7 @@
      sodipodi:role="line"
      y="0"
      x="0 4.9319634">25</tspan></text>
+
 
 <text
    id="text356"
@@ -1692,6 +1838,7 @@
      y="10.85031"
      x="-147.95889">]</tspan></text>
 
+
 <text
    y="132.9189"
    x="17.565022"
@@ -1704,9 +1851,10 @@
    style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:medium;line-height:normal;font-family:'Ubuntu Mono';-inkscape-font-specification:UbuntuMono-Regular;font-variant-ligatures:normal;font-variant-position:normal;font-variant-caps:normal;font-variant-numeric:normal;font-variant-alternates:normal;font-feature-settings:normal;text-indent:0;text-align:start;text-decoration:none;text-decoration-line:none;text-decoration-style:solid;text-decoration-color:#000000;letter-spacing:normal;word-spacing:normal;text-transform:none;writing-mode:lr-tb;direction:ltr;text-orientation:mixed;dominant-baseline:auto;baseline-shift:baseline;text-anchor:start;white-space:normal;shape-padding:0;opacity:1;vector-effect:none;fill:#cc00ff;fill-opacity:1;stroke:none;stroke-width:0.75;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:4;stroke-dasharray:none;stroke-dashoffset:0;stroke-opacity:1"
    id="tspan1143">.</tspan><tspan
    id="tspan1137"
-   style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:9.86392689px;line-height:normal;font-family:'Ubuntu Mono';-inkscape-font-specification:UbuntuMono-Regular;font-variant-ligatures:normal;font-variant-position:normal;font-variant-caps:normal;font-variant-numeric:normal;font-variant-alternates:normal;font-variant-east_asian:normal;font-feature-settings:normal;text-indent:0;text-align:start;text-decoration:none;text-decoration-line:none;text-decoration-style:solid;text-decoration-color:#000000;letter-spacing:normal;word-spacing:normal;text-transform:none;writing-mode:lr-tb;direction:ltr;text-orientation:mixed;dominant-baseline:auto;baseline-shift:baseline;text-anchor:start;white-space:normal;shape-padding:0;opacity:1;vector-effect:none;fill:#ff00ff;fill-opacity:1;stroke:none;stroke-width:1;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:4;stroke-dasharray:none;stroke-dashoffset:0;stroke-opacity:1">to_list</tspan><tspan
+   style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:9.86392689px;line-height:normal;font-family:'Ubuntu Mono';-inkscape-font-specification:UbuntuMono-Regular;font-variant-ligatures:normal;font-variant-position:normal;font-variant-caps:normal;font-variant-numeric:normal;font-variant-alternates:normal;font-feature-settings:normal;text-indent:0;text-align:start;text-decoration:none;text-decoration-line:none;text-decoration-style:solid;text-decoration-color:#000000;letter-spacing:normal;word-spacing:normal;text-transform:none;writing-mode:lr-tb;direction:ltr;text-orientation:mixed;dominant-baseline:auto;baseline-shift:baseline;text-anchor:start;white-space:normal;shape-padding:0;opacity:1;vector-effect:none;fill:#ff00ff;fill-opacity:1;stroke:none;stroke-width:1;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:4;stroke-dasharray:none;stroke-dashoffset:0;stroke-opacity:1">to_list</tspan><tspan
    style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:9.86392689px;line-height:normal;font-family:'Ubuntu Mono';-inkscape-font-specification:UbuntuMono-Regular;font-variant-ligatures:normal;font-variant-position:normal;font-variant-caps:normal;font-variant-numeric:normal;font-variant-alternates:normal;font-feature-settings:normal;text-indent:0;text-align:start;text-decoration:none;text-decoration-line:none;text-decoration-style:solid;text-decoration-color:#000000;letter-spacing:normal;word-spacing:normal;text-transform:none;writing-mode:lr-tb;direction:ltr;text-orientation:mixed;dominant-baseline:auto;baseline-shift:baseline;text-anchor:start;white-space:normal;shape-padding:0;opacity:1;vector-effect:none;fill:#000000;fill-opacity:1;stroke:none;stroke-width:1;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:4;stroke-dasharray:none;stroke-dashoffset:0;stroke-opacity:1"
    id="tspan1145">()</tspan></tspan></text>
+
 
 </g><text
    y="87.139885"
@@ -1717,6 +1865,7 @@
      sodipodi:role="line"
      y="87.139885"
      x="291.3194 297.83133 304.34323 310.85516 313.45523 319.10046 325.6124 328.21246 334.7244 341.2363 344.49228 347.74823 355.56018 361.41623 364.62534 371.13727 377.64917">equivalent Python</tspan></text>
+
 
 <path
    style="opacity:1;vector-effect:none;fill:none;fill-opacity:1;stroke:#cccccc;stroke-width:1.50000024;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:4;stroke-dasharray:none;stroke-dashoffset:0;stroke-opacity:1"

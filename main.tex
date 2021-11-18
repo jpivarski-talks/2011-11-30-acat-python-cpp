@@ -60,7 +60,7 @@
 \Large
 
 \vspace{0.5 cm}
-This talk is about lessons learned in Python-C++ integration.
+This talk is about \textcolor{darkblue}{lessons learned in Python-C++ integration}.
 
 \vspace{1.5 cm}
 Awkward Array is the case study.
@@ -71,11 +71,11 @@ Awkward Array is the case study.
 \end{center}
 \end{frame}
 
-\begin{frame}{Awkward Array}
+\begin{frame}{What is Awkward Array?}
 \large
 \vspace{0.25 cm}
 
-Efficient representation of variable length, nested, JSON-like data with NumPy-like functions to compute and restructure at scale in Python.
+Efficient representation of variable length, nested, JSON-like data with NumPy-like functions to quickly compute and restructure data in Python.
 
 \begin{columns}
 \column{1.15\linewidth}
@@ -107,14 +107,14 @@ Efficient representation of variable length, nested, JSON-like data with NumPy-l
 \textcolor{darkblue}{Awkward 0.x $\to$ 1.x:} complete rewrite with the intention of changing the API.
 
 \vspace{0.25 cm}
-Had to replace some NumPy function calls with precompiled C functions, so we also built the infrastructure in C++ with Python only for the high-level front-end.
+Also had to replace some NumPy function calls with precompiled C functions, so we built the infrastructure in C++ with Python only for the high-level front-end.
 
 \vspace{1 cm}
 \begin{uncoverenv}<2->
-\textcolor{darkblue}{Awkward 1.x $\to$ 2.x:} porting the C++ infrastructure to Python.
+\textcolor{darkblue}{Awkward 1.x $\to$ 2.x:} we are now porting the C++ infrastructure back to Python.
 
 \vspace{0.25 cm}
-For reasons described later in this talk.
+(For reasons described later in this talk.)
 
 \vspace{0.25 cm}
 \begin{center}
@@ -140,7 +140,7 @@ For reasons described later in this talk.
 \end{columns}
 \end{frame}
 
-\begin{frame}{Language choice is unrelated to performance}
+\begin{frame}{This language choice is unrelated to performance}
 \large
 
 \vspace{0.25 cm}
@@ -151,7 +151,7 @@ Porting the tree structures from C++ to Python has no $\mathcal{O}(n)$ impact.
 
 \vspace{0.15 cm}
 \begin{uncoverenv}<2->
-\mbox{ } \hfill \textcolor{darkblue}{For an array of length 30~million:} \hfill \mbox{ }
+\mbox{ } \hfill \textcolor{darkblue}{For an array of 30~million lists of records:} \hfill \mbox{ }
 
 \includegraphics[width=\linewidth]{numpy-like-vs-equivalent-python.pdf}
 
@@ -179,7 +179,7 @@ equivalent Python: \textcolor{darkblue}{140~seconds}
 \end{center}
 \end{frame}
 
-\begin{frame}{Issue \#1: C++ as an ABI}
+\begin{frame}{Issue \#1: Intention to use C++ as an ABI}
 \large
 
 \vspace{0.5 cm}
@@ -190,13 +190,13 @@ Awkward 2.x removes this capability.
 
 \vspace{0.25 cm}
 \begin{itemize}\setlength{\itemsep}{0.25 cm}
-\item<2-> Python packages must be distributed as binaries, with compilation-on-install as a last resort: ``\mintinline{bash}{pip install awkward}'' shouldn't have dependencies outside of \mintinline{bash}{pip}, such as the existence of a compiler.
+\item<2-> Python packages must be distributed as binaries, with compilation-on-install {\it as a last resort!} ``\mintinline{bash}{pip install awkward}'' shouldn't have dependencies outside of \mintinline{bash}{pip}, including the existence of a compiler.
 
 \item<3-> Dynamically linking to precompiled C++ exposes a project to ABI dependencies. Awkward-enabled HEP libraries would depend on ABI version.
 
 {\scriptsize (See \mintinline{bash}{PYBIND11_INTERNALS_VERSION} in \mintinline{bash}{pybind11/include/pybind11/detail/internals.h}.)}
 
-\item<4-> Not needed anyway: \textcolor{blue}{\href{https://github.com/scikit-hep/fastjet}{fastjet}}, a Python/Awkward interface to \textcolor{blue}{\href{http://fastjet.fr/}{FastJet}} (C++), interfaces through C data types rather easily.
+\item<4-> \textcolor{darkorange}{\bf Not needed anyway:} \textcolor{blue}{\href{https://github.com/scikit-hep/fastjet}{fastjet}}, a Python/Awkward interface to \mbox{\textcolor{blue}{\href{http://fastjet.fr/}{FastJet}} (C++),\hspace{-0.5 cm}} interfaces through C data types (raw arrays) easily.
 
 \vspace{0.25 cm}
 Awkward Array does not need to be C++ to
@@ -215,7 +215,7 @@ interface with C++.
 \vspace{0.15 cm}
 
 \begin{columns}
-\column{1.15\linewidth}
+\column{1.16\linewidth}
 \includegraphics[width=\linewidth]{python-cpp-reference-cycles.pdf}
 \end{columns}
 \end{frame}
@@ -234,7 +234,7 @@ interface with C++.
 
 \item<5-> We tried to fix this by making the VirtualArray cache a weakref, but this had its own share of issues: {\normalsize \#230, \#400, \#432, \#479, \#541, \#560, \#597, \#603, \#655, \#679, \#783, \#865, \#899, \#940, \#1052\ldots}
 
-\item<6-> Even sneakier: reference cycles can come through closures in the VirtualArray's function. (Anything mutable is an opening!)
+\item<6-> Even sneakier: reference cycles can be created by function closures; VirtualArrays hold Python functions. (Anything mutable is an opening!)
 
 \item<7-> Dropping C++ solves this, but we're also replacing VirtualArrays with Dask.
 \end{itemize}
@@ -248,7 +248,7 @@ interface with C++.
 \vspace{-3.75 cm}
 If you're using pybind11, be aware that it does not release
 
-Python's GIL by default.
+Python's GIL by default. The GIL undermines multithreading.
 
 \vspace{0.25 cm}
 {\small \textcolor{gray}{(See \mintinline{c++}{py::gil_scoped_acquire}, \mintinline{c++}{py::gil_scoped_release},}
@@ -256,12 +256,12 @@ Python's GIL by default.
 \textcolor{gray}{and \mintinline{c++}{py::call_guard}.)}}
 
 \vspace{0.5 cm}
-\uncover<2->{Furthermore, you can't release it if you ever need to change}
+\uncover<2->{Furthermore, you can't release the GIL if you ever need to}
 
-\uncover<2->{any Python object, even a reference count.}
+\uncover<2->{change any Python object, even a reference counter.}
 
 \vspace{0.5 cm}
-\uncover<3->{Awkward Array's C++ objects hold references to Python objects (mostly NumPy arrays) and decrement the reference count if the C++ object is deleted. Since that could happen at any time, we can't release the GIL, which undermines parallel processing.}
+\uncover<3->{Awkward Array's C++ objects hold references to Python objects (mostly NumPy arrays) and decrement the reference count if the C++ object is deleted. Since that could happen at any time, we can't release the GIL without risking segfaults.}
 \end{frame}
 
 \begin{frame}{Issue \#4: Algorithm visibility}
@@ -305,16 +305,66 @@ Tracers can see binary ops and functions, but calls out of Python are black boxe
 \large
 \vspace{0.5 cm}
 
-The ``tree structures'' (mid-level) of Awkward Array is too coarse for these libraries because the third-party libraries don't recognize arrays of trees.
+The ``tree structures'' (mid-level) of Awkward Array are too coarse for these libraries because the third-party libraries don't recognize arrays of trees.
 
 \vspace{0.5 cm}
-They {\it do} recognize simple arrays of numbers (our ``kernel,'' or low-level).
+They {\it do} recognize simple arrays of numbers (our ``kernels,'' or low-level).
 
 \vspace{0.5 cm}
 See Anish Biswas's presentation at \textcolor{blue}{\href{https://indico.cern.ch/event/1033648}{https://indico.cern.ch/event/1033648}} for a heroic attempt to integrate Awkward Array and JAX using PyTrees.
 
 \vspace{0.5 cm}
 \uncover<2->{\textcolor{darkorange}{\bf This last problem with Awkward Array's C++ layer is the one that finally convinced us to change.}}
+\end{frame}
+
+\begin{frame}{\mbox{ }}
+\LARGE
+\begin{center}
+\textcolor{darkblue}{Awkward Array's Python-C++ codebase was a bad design.}
+
+\vspace{1 cm}
+\textcolor{darkblue}{\uncover<2->{Does that mean you shouldn't mix Python and C++?}}
+\end{center}
+\end{frame}
+
+\begin{frame}{\mbox{ }}
+\Huge
+\begin{center}
+\textcolor{darkblue}{\bf No!}
+\end{center}
+\end{frame}
+
+\begin{frame}{\mbox{ }}
+\vspace{0.25 cm}
+\LARGE
+\textcolor{darkblue}{Just watch out for these issues when you do.}
+
+\vspace{0.25 cm}
+\Large
+\begin{enumerate}\setlength{\itemsep}{0.25 cm}
+\item Don't plan on sharing stdlib (e.g.\ \mintinline{c++}{std::vector}) or pybind11 objects between Python modules. Share data as basic C types.
+
+\item Python and C++ can share references, but ensure no reference cycles! 100\% immutability would prevent cycles.
+
+\item You can only release the GIL in blocks of code that do not touch Python in any way, including reference counts.
+
+\item Think about interoperability plans: how much of your code will third-party libraries need to see?
+\end{enumerate}
+\end{frame}
+
+\begin{frame}{\mbox{ }}
+\LARGE
+\begin{center}
+\textcolor{darkblue}{Basically, keep Python and C++ an arm's length apart.}
+
+\Large
+\vspace{1 cm}
+\textcolor{darkblue}{\uncover<2->{A ``loose coupling'' avoids most of these issues.}}
+
+\normalsize
+\vspace{1 cm}
+\textcolor{darkblue}{\uncover<3->{(This may be an advertisement for Julia.)}}
+\end{center}
 \end{frame}
 
 \end{document}
